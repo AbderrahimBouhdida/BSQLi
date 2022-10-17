@@ -114,11 +114,11 @@ def get_data(args, length):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Automate Blind SQLI')
     parser.add_argument('-u', required=False,
-                        help='urls to test')
+                        help='url to test')
     parser.add_argument('--cookies',
                         help='cookies')
     parser.add_argument('--target',
-                        help='target')
+                        help='target cookie to inject')
     parser.add_argument('--threshold', type=int, default=10,
                         help='sleep value')
     args = parser.parse_args()
