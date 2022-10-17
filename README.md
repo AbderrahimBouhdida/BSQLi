@@ -19,7 +19,7 @@ Automate Blind SQLI
 
 optional arguments:
   -h, --help            show this help message and exit
-  -u U                  urls to test
+  -u U                  url to test
   --cookies COOKIES     cookies
   --target TARGET       target cookie to inject
   --threshold THRESHOLD
